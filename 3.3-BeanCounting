@@ -1,0 +1,14 @@
+let s = "Bobby es Bueno Balanceando Bastantes Babaganushes en su Boca";
+
+// This function loops through an array of characters (a string) and counts characters
+function countChar(_s, _c) {
+  let chars = 0;
+  for( let i = 0; i <= _s.length; i++) {
+    if(_s[i] == _c) {
+      chars++;
+    }
+  }
+  return chars;
+}
+
+console.log(s,"tiene",countChar(s,"B"),"B's");
