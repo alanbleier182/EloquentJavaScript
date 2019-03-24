@@ -1,16 +1,22 @@
 let size = 8;
 
+//chessboard is an empty string
 let chessboard = "";
 
+// Loop through the array...
 for (let y = 0; y < size; y++) {
   for (let x = 0; x < size; x++) {
+    //The logic is simple, but not necessarily obvious:
+    // an odd number + an even number always equals an odd number
     if ((x + y) % 2 == 0) {
       chessboard += " ";
     } else {
       chessboard += "#";
     }
   }
-  board += "\n";
+  // Add a newline after every row
+  chessboard += "\n";
 }
 
+// chessboard is now a string filled with alternating " "s and "#"s, and "\n"s every end of row.
 console.log(chessboard);
